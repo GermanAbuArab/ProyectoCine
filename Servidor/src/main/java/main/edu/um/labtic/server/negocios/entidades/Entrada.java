@@ -4,6 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "Entrada")
+@Table (name = "ENTRADAS")
 public class Entrada {
 }
