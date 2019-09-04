@@ -11,13 +11,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CineManager {
 
+
+
+     // @Autowired
+    //  CineRepository CineRepository
+    // ## segun javi
+
     private final CineRepository CineRepository;
     @Autowired
     public CineManager(CineRepository cineRepository) {
         CineRepository = cineRepository;
     }
 
-    @PostMapping("/cine")
+    @PostMapping("/Cine") // ahce el mapeo de lo que viene en el canal 8080 viene en html
     public void save(@RequestBody Cine cine) {
         CineRepository.save(cine);
     }
