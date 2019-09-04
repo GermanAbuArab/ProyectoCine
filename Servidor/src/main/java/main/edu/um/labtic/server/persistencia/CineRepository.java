@@ -1,6 +1,6 @@
 package main.edu.um.labtic.server.persistencia;
 
-import main.edu.um.labtic.server.negocios.Cine;
+import main.edu.um.labtic.server.negocios.entidades.Cine;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

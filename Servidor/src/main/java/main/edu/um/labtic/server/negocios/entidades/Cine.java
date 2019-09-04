@@ -1,4 +1,4 @@
-package main.edu.um.labtic.server.negocios;
+package main.edu.um.labtic.server.negocios.entidades;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
