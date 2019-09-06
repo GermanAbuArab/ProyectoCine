@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 @Table(name ="LOCALES")
 public class Local {
     @Id
-    private Long id; // Could change
+    private Long id; // Could change(LONG)
 
     @NotBlank
     @Column(name = "Nombre", nullable = false, length = 196)

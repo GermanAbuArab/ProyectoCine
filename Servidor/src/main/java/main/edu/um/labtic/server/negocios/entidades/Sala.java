@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 public class Sala {
 
     @Id
-    private Long id; // Could change
+    private Long id; // Could change(LONG)
 
     @NotBlank
     @Column(name = "Nombre", nullable = false, length = 60)
