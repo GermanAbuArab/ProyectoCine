@@ -12,4 +12,20 @@ public class Local {
     @NotBlank
     @Column(name = "Nombre", nullable = false, length = 196)
     private String Nombre;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String nombre) {
+        Nombre = nombre;
+    }
 }
