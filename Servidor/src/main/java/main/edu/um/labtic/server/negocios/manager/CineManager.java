@@ -23,8 +23,8 @@ public class CineManager {
         CineRepository = cineRepository;
     }
 
-    @PostMapping("/Cine") // ahce el mapeo de lo que viene en el canal 8080 viene en html
-    public void save(@RequestBody Cine cine) {
+    // ahce el mapeo de lo que viene en el canal 8080 viene en html
+    public void save( Cine cine) {
         CineRepository.save(cine);
     }
 }

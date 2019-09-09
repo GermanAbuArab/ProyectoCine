@@ -28,4 +28,5 @@ public class Local {
     public void setNombre(String nombre) {
         Nombre = nombre;
     }
+
 }

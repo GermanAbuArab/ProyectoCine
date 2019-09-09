@@ -10,11 +10,14 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class SalaManager {
 
+    private final SalaRepository SalaRepository;
     @Autowired
-    SalaRepository repository;
-    @PostMapping("/sala")
-    public void save(@RequestBody Sala sala){
-        repository.save(sala);
+    public SalaManager(SalaRepository salaRepository)
+    {SalaRepository = salaRepository;}
+
+
+    public void save(Sala sala){
+        SalaRepository.save(sala);
     }
 
 }
