@@ -17,4 +17,9 @@ public class Pelicula {
     @NotBlank
     @Column (name = "Descripción", nullable = false)
     private String Descripcion;
+
+    public Pelicula(@NotBlank String nombre, @NotBlank String descripcion) {
+        Nombre = nombre;
+        Descripcion = descripcion;
+    }
 }
