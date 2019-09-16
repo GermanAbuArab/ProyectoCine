@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.*;
 public class SalaManager {
 
     private final SalaRepository SalaRepository;
+
     @Autowired
-    public SalaManager(SalaRepository salaRepository)
-    {SalaRepository = salaRepository;}
+    public SalaManager(SalaRepository salaRepository) {
+        SalaRepository = salaRepository;
+    }
 
 
-    public void save(Sala sala){
+    public void save(Sala sala) {
         SalaRepository.save(sala);
     }
 
