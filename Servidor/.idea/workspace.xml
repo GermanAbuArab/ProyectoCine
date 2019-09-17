@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40b5f144-6fcd-4f58-a67e-54fc8379bfd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/negocios/entidades/Pelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/negocios/entidades/Pelicula.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/negocios/manager/SalaManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/negocios/manager/SalaManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/persistencia/SalaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/main/edu/um/labtic/server/persistencia/SalaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/edu/um/labtic/server/servicios/MainAdminMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/edu/um/labtic/server/servicios/MainAdminMovies.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -60,7 +57,7 @@
     <favorites_list name="Servidor" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.68839884">
+    <splitter split-orientation="horizontal" split-proportion="0.5848514">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -78,8 +75,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/main/edu/um/labtic/server/servicios/MainAdminMovies.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+                <state relative-caret-position="366">
+                  <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -454,7 +451,7 @@
       <workItem from="1567877703662" duration="4226000" />
       <workItem from="1568059221776" duration="12184000" />
       <workItem from="1568116493319" duration="3992000" />
-      <workItem from="1568634528253" duration="16099000" />
+      <workItem from="1568634528253" duration="16754000" />
     </task>
     <task id="LOCAL-00001" summary="Agrego el repositorio de Cine">
       <created>1567613663554</created>
@@ -551,7 +548,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66419000" />
+    <option name="totallyTimeSpent" value="67074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -987,8 +984,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/edu/um/labtic/server/servicios/MainAdminMovies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="366">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
