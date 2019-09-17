@@ -21,7 +21,7 @@ public class MainAdminMovies {
         PeliculaManager Spm = context.getBean(PeliculaManager.class);
 
         Pelicula pelicula= new Pelicula("Felipe", "adasdasdasdasdas");
-        Spm.save(pelicula);
+        Spm.save(pelicula   );
         context.close();
 
 
