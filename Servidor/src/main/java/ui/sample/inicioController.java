@@ -24,7 +24,7 @@ public class inicioController implements Initializable {
 
     @FXML
     private void addScene(ActionEvent event) throws IOException {
-        Parent inicio = FXMLLoader.load(getClass().getResource("addMovie/addMovie.fxml"));
+        Parent inicio = FXMLLoader.load(getClass().getResource("/sample.addMovie/addMovie.fxml"));
         Scene inicioScene = new Scene(inicio);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(inicioScene);
