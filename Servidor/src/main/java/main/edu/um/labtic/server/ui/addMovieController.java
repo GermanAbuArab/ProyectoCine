@@ -29,7 +29,7 @@ public class addMovieController {
 
     @FXML
     private void addScene(ActionEvent event) throws IOException {  // vuelve a la scena
-        Parent inicio = FXMLLoader.load(getClass().getResource("../inicio.fxml"));
+        Parent inicio = FXMLLoader.load(getClass().getResource("../../../../resources/inicio.fxml"));
         Scene inicioScene = new Scene(inicio);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(inicioScene);
