@@ -12,7 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 
 @SpringBootApplication
-public class ServidorApplication {
+public class ServidorApplication extends Application {
 
 	private ConfigurableApplicationContext springContext;
 	private Parent rootNode;
@@ -26,7 +26,7 @@ public class ServidorApplication {
 
 	@Override
 	public void init() throws Exception {
-		springContext = SpringApplication.run(MyApp.class);
+		springContext = SpringApplication.run(ServidorApplication.class);
 		fxmlLoader = new FXMLLoader();
 		fxmlLoader.setControllerFactory(springContext::getBean);
 	}
@@ -40,8 +40,7 @@ public class ServidorApplication {
 		Scene scene = new Scene(rootNode, 800, 600);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-
-
+		
 	}
 
 	@Override
