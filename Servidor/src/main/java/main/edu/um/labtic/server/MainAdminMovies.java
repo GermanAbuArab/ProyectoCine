@@ -1,4 +1,4 @@
-package main.edu.um.labtic.server.servicios;
+package main.edu.um.labtic.server;
 
 import javafx.application.Application;
 import javafx.scene.Parent;

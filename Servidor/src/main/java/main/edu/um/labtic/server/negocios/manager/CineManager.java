@@ -4,33 +4,27 @@ package main.edu.um.labtic.server.negocios.manager;
 import main.edu.um.labtic.server.negocios.entidades.Cine;
 import main.edu.um.labtic.server.persistencia.CineRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-
+@Service
 @RestController
 public class CineManager {
 
 
+    private final CineRepository cineRepository;
 
-     // @Autowired
-      //CineRepository CineRepository
-    // ## segun javi
-
-    private final CineRepository CineRepository;
     @Autowired
-    public CineManager(CineRepository cineRepository) {
-        CineRepository = cineRepository;
+    public CineManager(CineRepository cinerepository) {
+        cineRepository = cinerepository;
     }
 
 
-
-    @RequestMapping(path="/Cine",method=RequestMethod.POST)
-    public void save(@RequestBody Cine cine){
+    public void save(Cine cine) {
         System.out.println("Funca");
-        CineRepository.save(cine);
+        cineRepository.save(cine);
     }
-
 
 
 }

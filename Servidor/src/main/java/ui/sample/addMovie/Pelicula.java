@@ -1,4 +1,4 @@
-package sample.addMovie;
+package ui.sample.addMovie;
 
 public class Pelicula {
 

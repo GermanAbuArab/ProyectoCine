@@ -1,4 +1,4 @@
-package sample.addMovie;
+package ui.sample.addMovie;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
