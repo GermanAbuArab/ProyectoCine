@@ -1,4 +1,4 @@
-package ui.sample.addMovie;
+package main.edu.um.labtic.server;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

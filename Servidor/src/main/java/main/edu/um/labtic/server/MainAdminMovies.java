@@ -1,12 +1,8 @@
+/*
 package main.edu.um.labtic.server;
 
-import javafx.application.Application;
-import javafx.scene.Parent;
-import javafx.stage.Stage;
+
 import main.edu.um.labtic.server.negocios.entidades.Pelicula;
-import main.edu.um.labtic.server.negocios.manager.PeliculaManager;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
@@ -29,3 +25,4 @@ public class MainAdminMovies {
 
 
 }
+*/

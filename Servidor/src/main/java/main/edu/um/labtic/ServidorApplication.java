@@ -9,7 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.springframework.context.ConfigurableApplicationContext;
-
+/*
 
 @SpringBootApplication
 public class ServidorApplication extends Application {
@@ -22,7 +22,7 @@ public class ServidorApplication extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-	*/
+
 
 	@Override
 	public void init() throws Exception {
@@ -33,14 +33,14 @@ public class ServidorApplication extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception{
-		fxmlLoader.setLocation(getClass().getResource("Cine-UI\\src\\sample\\inicio.fxml")); //no se si esta bien puesto el path
+		fxmlLoader.setLocation(getClass().getResource("inicio.fxml")); //no se si esta bien puesto el path
 		rootNode = fxmlLoader.load();
 
 		primaryStage.setTitle("Inicio"); //nombre de la ventana
 		Scene scene = new Scene(rootNode, 800, 600);
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
+
 	}
 
 	@Override
@@ -53,3 +53,4 @@ public class ServidorApplication extends Application {
 	}
 
 }
+*/

@@ -1,4 +1,4 @@
-package ui.sample.addMovie;
+package main.edu.um.labtic.server.ui;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,10 +8,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import main.edu.um.labtic.server.negocios.entidades.Pelicula;
+import main.edu.um.labtic.server.persistencia.PeliculaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+@RestController
 public class addMovieController {
+
+    @Autowired
+    PeliculaRepository peliculaRepository;
+
 
     @FXML
     private TextField nombrePelicula,Descripcion;
@@ -24,6 +33,7 @@ public class addMovieController {
 
 
         Pelicula pelicula = new Pelicula(nombrePelicula.getText(),Descripcion.getText());
+        peliculaRepository.save(pelicula);
         System.out.println("Creaste la peli " + pelicula.getNombre() + " cuya descripcion es " + pelicula.getDescripcion());
     }
 
@@ -35,5 +45,6 @@ public class addMovieController {
         window.setScene(inicioScene);
         window.show();
     }
+
 
 }

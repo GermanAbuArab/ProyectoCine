@@ -14,7 +14,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.sample.inicioController">
    <top>
-      <VBox styleClass="top_nav" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+      <VBox styleClass="top_nav" stylesheets="@ui/sample/styles.css" BorderPane.alignment="CENTER">
          <children>
             <HBox>
                <children>
@@ -32,7 +32,7 @@
                      </HBox.margin>
                   </Text>
                   <Region prefHeight="50.0" prefWidth="127.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" onAction="#botonBuscar" prefHeight="33.0" prefWidth="59.0" styleClass="search_button" stylesheets="@styles.css" text="Buscar" textFill="WHITE">
+                  <Button mnemonicParsing="false" onAction="#botonBuscar" prefHeight="33.0" prefWidth="59.0" styleClass="search_button" stylesheets="@ui/sample/styles.css" text="Buscar" textFill="WHITE">
                      <HBox.margin>
                         <Insets right="8.0" top="8.0" />
                      </HBox.margin>
@@ -70,7 +70,7 @@
          <children>
             <HBox>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@styles.css" text="Inicio" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@ui/sample/styles.css" text="Inicio" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="4.0" top="8.0" />
                      </HBox.margin>
@@ -92,7 +92,7 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="18.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@styles.css" text="Recomendados" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@ui/sample/styles.css" text="Recomendados" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="4.0" top="10.0" />
                      </HBox.margin>
@@ -111,7 +111,7 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="70.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@styles.css" text="Teatros" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="211.0" styleClass="btn_nav" stylesheets="@ui/sample/styles.css" text="Teatros" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="4.0" top="10.0" />
                      </HBox.margin>
@@ -130,7 +130,7 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="122.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="213.0" styleClass="btn_nav" stylesheets="@styles.css" text="Mapas" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="213.0" styleClass="btn_nav" stylesheets="@ui/sample/styles.css" text="Mapas" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="4.0" top="10.0" />
                      </HBox.margin>
