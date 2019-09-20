@@ -2,7 +2,7 @@
 package main.edu.um.labtic.server;
 
 
-import main.edu.um.labtic.server.negocios.entidades.Pelicula;
+import main.edu.um.labtic.server.servicios.entidades.Pelicula;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 

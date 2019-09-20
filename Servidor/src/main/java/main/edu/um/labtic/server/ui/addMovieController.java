@@ -8,8 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.edu.um.labtic.server.negocios.entidades.Pelicula;
-import main.edu.um.labtic.server.persistencia.PeliculaRepository;
+import main.edu.um.labtic.server.servicios.Pelicula;
+import main.edu.um.labtic.server.servicios.PeliculaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,18 +19,24 @@ import java.io.IOException;
 public class addMovieController {
 
     @Autowired
-    PeliculaRepository peliculaRepository;
+    PeliculaService peliculaService;
 
 
     @FXML
-    private TextField nombrePelicula,Descripcion;
+    private TextField nombrePelicula, descripcion;
 
     @FXML
     public void addMovie(){
 
-        Pelicula pelicula = new Pelicula(nombrePelicula.getText(),Descripcion.getText());
-        peliculaRepository.save(pelicula);
+        Pelicula pelicula = new Pelicula(nombrePelicula.getText(), descripcion.getText());
+
         System.out.println("Creaste la peli " + pelicula.getNombre() + " cuya descripcion es " + pelicula.getDescripcion());
+      // peliculaRepository.save(pelicula);
+
+        nombrePelicula.clear();
+        descripcion.clear();
+
+        System.out.println("hola");
     }
 
     @FXML
@@ -43,4 +49,6 @@ public class addMovieController {
     }
 
 
+    public addMovieController() {
+    }
 }

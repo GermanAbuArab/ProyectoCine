@@ -1,7 +1,7 @@
 /*package main.edu.um.labtic.server.persistencia;
 
 
-import main.edu.um.labtic.server.negocios.entidades.Pelicula;
+import main.edu.um.labtic.server.servicios.entidades.Pelicula;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
 
