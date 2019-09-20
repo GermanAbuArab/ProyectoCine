@@ -2,7 +2,7 @@
 package main.edu.um.labtic.server;
 
 
-import main.edu.um.labtic.server.servicios.entidades.Pelicula;
+import main.edu.um.labtic.server.servicios.entidades.Pelicula11;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
@@ -16,7 +16,7 @@ public class MainAdminMovies {
         context.refresh();
         PeliculaManager Spm = context.getBean(PeliculaManager.class);
 
-        Pelicula pelicula= new Pelicula("Felipe", "adasdasdasdasdas");
+        Pelicula11 pelicula= new Pelicula11("Felipe", "adasdasdasdasdas");
         Spm.save(pelicula   );
         context.close();
 

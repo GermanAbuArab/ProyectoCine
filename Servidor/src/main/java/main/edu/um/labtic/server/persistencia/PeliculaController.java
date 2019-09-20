@@ -1,7 +1,7 @@
 /*package main.edu.um.labtic.server.persistencia;
 
 
-import main.edu.um.labtic.server.servicios.entidades.Pelicula;
+import main.edu.um.labtic.server.servicios.entidades.Pelicula11;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +22,7 @@ public class PeliculaController {
 
 
     @PostMapping("/crear")
-    public void save(@RequestBody Pelicula pelicula){
+    public void save(@RequestBody Pelicula11 pelicula){
         peliculaRepository.save(pelicula);
     }
 
