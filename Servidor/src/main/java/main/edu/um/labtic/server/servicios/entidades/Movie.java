@@ -1,10 +1,10 @@
 package main.edu.um.labtic.server.servicios.entidades;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+        import javax.validation.constraints.NotBlank;
 
 @Entity
-public class Pelicula {
+public class Movie {
 
     @Id
     private long id;
@@ -17,7 +17,7 @@ public class Pelicula {
     @Column (name = "Descripción", nullable = false)
     private String Descripcion;
 
-    public Pelicula(long id, @NotBlank String nombre, @NotBlank String descripcion) {
+    public Movie(long id, @NotBlank String nombre, @NotBlank String descripcion) {
         Nombre = nombre;
         Descripcion = descripcion;
     }

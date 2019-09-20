@@ -1,14 +1,13 @@
 package main.edu.um.labtic.server.persistencia;
 
 
-
+import main.edu.um.labtic.server.servicios.entidades.Movie;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PeliculaRepository extends CrudRepository<Pelicula, Long>, QuerydslPredicateExecutor {
+public interface PeliculaRepository extends CrudRepository<Movie, Long>, QuerydslPredicateExecutor {
 
-
-    Pelicula findOneById(long id);
+    Movie findOneById(long id);
 }

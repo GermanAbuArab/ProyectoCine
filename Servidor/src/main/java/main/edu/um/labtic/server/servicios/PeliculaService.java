@@ -2,8 +2,8 @@ package main.edu.um.labtic.server.servicios;
 
 
 import main.edu.um.labtic.server.persistencia.PeliculaRepository;
-import main.edu.um.labtic.server.servicios.excepciones.InvalidPeliculaInformationException;
-import main.edu.um.labtic.server.servicios.excepciones.PeliculaAlreadyExistsException;
+import main.edu.um.labtic.server.servicios.excepciones.*;
+import main.edu.um.labtic.server.servicios.entidades.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,8 +23,8 @@ public class PeliculaService {
         if (peliculaRepository.findOneById(id) != null) {
             throw new PeliculaAlreadyExistsException();
         }
-        
-        Pelicula oPelicula= new Pelicula(id,name,descripcion);
+
+        Movie oPelicula= new Movie(id,name,descripcion);
 
     }
 

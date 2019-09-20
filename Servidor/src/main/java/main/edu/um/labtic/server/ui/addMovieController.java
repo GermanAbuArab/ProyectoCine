@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.edu.um.labtic.server.servicios.Pelicula;
+import main.edu.um.labtic.server.servicios.entidades.*;
 import main.edu.um.labtic.server.servicios.PeliculaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,7 +28,7 @@ public class addMovieController {
     @FXML
     public void addMovie(){
 
-        Pelicula pelicula = new Pelicula(nombrePelicula.getText(), descripcion.getText());
+        Movie pelicula = new Movie(nombrePelicula.getText(), descripcion.getText());
 
         System.out.println("Creaste la peli " + pelicula.getNombre() + " cuya descripcion es " + pelicula.getDescripcion());
       // peliculaRepository.save(pelicula);
