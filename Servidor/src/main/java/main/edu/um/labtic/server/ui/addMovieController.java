@@ -26,11 +26,7 @@ public class addMovieController {
     private TextField nombrePelicula,Descripcion;
 
     @FXML
-    public void addMovie(ActionEvent event){
-
-        String nombre = nombrePelicula.getText();
-        String descripcion = Descripcion.getText();
-
+    public void addMovie(){
 
         Pelicula pelicula = new Pelicula(nombrePelicula.getText(),Descripcion.getText());
         peliculaRepository.save(pelicula);
