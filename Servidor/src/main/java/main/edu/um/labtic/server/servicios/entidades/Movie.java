@@ -1,9 +1,10 @@
 package main.edu.um.labtic.server.servicios.entidades;
 
 import javax.persistence.*;
-        import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table(name ="PELICULAS")
 public class Movie {
 
     @Id
@@ -14,7 +15,7 @@ public class Movie {
     private String Nombre;
 
     @NotBlank
-    @Column (name = "Descripción", nullable = false)
+    @Column(name = "Descripción", nullable = false)
     private String Descripcion;
 
     public Movie(long id, @NotBlank String nombre, @NotBlank String descripcion) {
