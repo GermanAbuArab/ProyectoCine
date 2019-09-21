@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import main.edu.um.labtic.server.persistencia.PeliculaRepository;
 import main.edu.um.labtic.server.servicios.entidades.*;
 import main.edu.um.labtic.server.servicios.PeliculaService;
 import main.edu.um.labtic.server.servicios.excepciones.InvalidPeliculaInformationException;
@@ -19,12 +20,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+
+@CrossOrigin
 @RestController
-@Component
 public class addMovieController {
 
     @Autowired
-    PeliculaService peliculaService;
+    PeliculaRepository peliculaRepository;
+
+    @Autowired
+    PeliculaService peliculaService = new PeliculaService(peliculaRepository);
 
 
     @FXML

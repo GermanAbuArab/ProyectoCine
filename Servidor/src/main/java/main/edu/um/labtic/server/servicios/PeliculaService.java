@@ -15,6 +15,11 @@ public class PeliculaService implements PeliculaManager {
     @Autowired
     PeliculaRepository peliculaRepository;
 
+    @Autowired
+    public PeliculaService(PeliculaRepository peliculaRepository) {
+        this.peliculaRepository = peliculaRepository;
+    }
+
     @Override
     public void addPelicula(String name, String descripcion) throws PeliculaAlreadyExistsException, InvalidPeliculaInformationException {
 
@@ -22,9 +27,9 @@ public class PeliculaService implements PeliculaManager {
             throw new InvalidPeliculaInformationException("Alguno de los datos ingresados no es correcto");
         }
 
-        if (peliculaRepository.findOneByName(name) != null) {
-            throw new PeliculaAlreadyExistsException();
-        }
+       // if (peliculaRepository.findOneByName(name) != null) {
+        //    throw new PeliculaAlreadyExistsException();
+       // }
 
         Movie oPelicula= new Movie(name,descripcion);
         peliculaRepository.save(oPelicula);
