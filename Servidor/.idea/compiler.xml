@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="Servidor.main" target="1.8" />
+      <module name="Servidor.querydsl" target="1.8" />
       <module name="Servidor.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>

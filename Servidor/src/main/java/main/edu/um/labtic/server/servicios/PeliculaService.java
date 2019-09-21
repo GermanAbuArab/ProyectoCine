@@ -4,7 +4,6 @@ package main.edu.um.labtic.server.servicios;
 import main.edu.um.labtic.server.persistencia.MovieRepository;
 import main.edu.um.labtic.server.servicios.excepciones.*;
 import main.edu.um.labtic.server.servicios.entidades.Movie;
-
 import main.edu.um.labtic.server.servicios.rmi.PeliculaManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

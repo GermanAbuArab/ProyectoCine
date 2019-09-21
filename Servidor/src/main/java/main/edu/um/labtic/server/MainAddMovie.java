@@ -11,12 +11,17 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 
 @SpringBootApplication
-public class mainAddMovie extends Application {
+public class MainAddMovie extends Application {
 
     private static ConfigurableApplicationContext context;
+    private FXMLLoader fxmlLoader;
 
     @Override
-    public void init() {mainAddMovie.context = SpringApplication.run(mainAddMovie.class);}
+    public void init() {
+        context = SpringApplication.run(MainAddMovie.class);
+        fxmlLoader = new FXMLLoader();
+        fxmlLoader.setControllerFactory(context::getBean);
+       }
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -37,7 +42,7 @@ public class mainAddMovie extends Application {
 
     @Override
     public void stop() {
-        mainAddMovie.getContext().close();
+        MainAddMovie.getContext().close();
     }
 
 }

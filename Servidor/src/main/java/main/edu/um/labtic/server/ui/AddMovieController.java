@@ -20,7 +20,7 @@ import java.io.IOException;
 
 @CrossOrigin
 @RestController
-public class addMovieController {
+public class AddMovieController {
 
     @Autowired
     private PeliculaService peliculaService;
@@ -59,8 +59,7 @@ public class addMovieController {
     }
 
 
-    public addMovieController() {
-    }
+
 
 
 }

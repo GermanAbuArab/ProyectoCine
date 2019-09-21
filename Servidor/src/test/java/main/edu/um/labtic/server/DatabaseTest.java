@@ -1,8 +1,6 @@
-package main.edu.um.labtic.server.servicios;
+package main.edu.um.labtic.server;
 
-
-import main.edu.um.labtic.server.mainAddMovie;
-import main.edu.um.labtic.server.persistencia.PeliculaRepository;
+import main.edu.um.labtic.server.servicios.PeliculaService;
 import main.edu.um.labtic.server.servicios.entidades.Movie;
 import main.edu.um.labtic.server.servicios.excepciones.InvalidPeliculaInformationException;
 import main.edu.um.labtic.server.servicios.excepciones.PeliculaAlreadyExistsException;
@@ -14,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.assertEquals;
 
-@SpringBootTest(classes = mainAddMovie.class)
+@SpringBootTest(classes = MainAddMovie.class)
 @RunWith(SpringRunner.class)
 public class DatabaseTest {
     @Autowired
