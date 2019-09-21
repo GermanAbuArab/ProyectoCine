@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PeliculaRepository extends CrudRepository<Movie, Long>, QuerydslPredicateExecutor {
 
-    Movie findOneById(long id);
+    Movie findOneByName(String name);
 }

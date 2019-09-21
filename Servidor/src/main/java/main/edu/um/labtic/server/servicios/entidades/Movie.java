@@ -23,6 +23,12 @@ public class Movie {
         Descripcion = descripcion;
     }
 
+    public Movie(@NotBlank String nombre,@NotBlank String descripcion) {
+        Nombre=nombre;
+        Descripcion=descripcion;
+
+    }
+
 
     public long getId() {
         return id;

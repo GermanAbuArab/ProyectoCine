@@ -10,12 +10,17 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import main.edu.um.labtic.server.servicios.entidades.*;
 import main.edu.um.labtic.server.servicios.PeliculaService;
+import main.edu.um.labtic.server.servicios.excepciones.InvalidPeliculaInformationException;
+import main.edu.um.labtic.server.servicios.excepciones.PeliculaAlreadyExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
 @RestController
+@Component
 public class addMovieController {
 
     @Autowired
@@ -27,12 +32,18 @@ public class addMovieController {
 
     @FXML
     public void addMovie(){
+        String nombre=nombrePelicula.getText();
+        String descripcion1=descripcion.getText();
 
-        Movie pelicula = new Movie(nombrePelicula.getText(), descripcion.getText());
 
-        System.out.println("Creaste la peli " + pelicula.getNombre() + " cuya descripcion es " + pelicula.getDescripcion());
-      // peliculaRepository.save(pelicula);
-
+        System.out.println("Creaste la peli " + nombre + " cuya descripcion es " + descripcion1);
+        try {
+            peliculaService.addPelicula(nombre,descripcion1);
+        } catch (PeliculaAlreadyExistsException e) {
+            e.printStackTrace();
+        } catch (InvalidPeliculaInformationException e) {
+            e.printStackTrace();
+        }
         nombrePelicula.clear();
         descripcion.clear();
 
