@@ -1,4 +1,4 @@
-package main.edu.um.labtic;
+    package main.edu.um.labtic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

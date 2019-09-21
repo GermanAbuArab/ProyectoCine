@@ -1,13 +1,17 @@
 package main.edu.um.labtic.server.servicios.entidades;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name ="PELICULAS")
+@Table(name = "PELICULAS")
 public class Movie {
 
     @Id
+    @GeneratedValue(generator = "movies_id")
+    @GenericGenerator(name = "movies_id", strategy = "increment")
     private long id;
 
     @NotBlank
@@ -18,14 +22,10 @@ public class Movie {
     @Column(name = "Descripción", nullable = false)
     private String Descripcion;
 
-    public Movie(long id, @NotBlank String nombre, @NotBlank String descripcion) {
+
+    public Movie(@NotBlank String nombre, @NotBlank String descripcion) {
         Nombre = nombre;
         Descripcion = descripcion;
-    }
-
-    public Movie(@NotBlank String nombre,@NotBlank String descripcion) {
-        Nombre=nombre;
-        Descripcion=descripcion;
 
     }
 

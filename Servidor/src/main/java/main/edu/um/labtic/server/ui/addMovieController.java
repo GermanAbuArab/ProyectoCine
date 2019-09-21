@@ -8,13 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.edu.um.labtic.server.persistencia.PeliculaRepository;
-import main.edu.um.labtic.server.servicios.entidades.*;
 import main.edu.um.labtic.server.servicios.PeliculaService;
 import main.edu.um.labtic.server.servicios.excepciones.InvalidPeliculaInformationException;
 import main.edu.um.labtic.server.servicios.excepciones.PeliculaAlreadyExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,10 +23,7 @@ import java.io.IOException;
 public class addMovieController {
 
     @Autowired
-    PeliculaRepository peliculaRepository;
-
-    @Autowired
-    PeliculaService peliculaService = new PeliculaService(peliculaRepository);
+    private PeliculaService peliculaService;
 
 
     @FXML
@@ -67,4 +61,6 @@ public class addMovieController {
 
     public addMovieController() {
     }
+
+
 }

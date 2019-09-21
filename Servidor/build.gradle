@@ -27,4 +27,5 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	compile 'mysql:mysql-connector-java'
+	compile group: 'com.querydsl', name: 'querydsl-jpa', version: '4.2.1'
 }

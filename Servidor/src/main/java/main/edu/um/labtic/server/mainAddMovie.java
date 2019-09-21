@@ -5,8 +5,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
+
+@SpringBootApplication
 public class mainAddMovie extends Application {
+
+    private static ConfigurableApplicationContext context;
+
+    @Override
+    public void init() {mainAddMovie.context = SpringApplication.run(mainAddMovie.class);}
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -16,9 +26,18 @@ public class mainAddMovie extends Application {
         primaryStage.show();
     }
 
-
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public static ConfigurableApplicationContext getContext() { return context; }
+
+
+
+
+    @Override
+    public void stop() {
+        mainAddMovie.getContext().close();
     }
 
 }
